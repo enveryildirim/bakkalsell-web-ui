@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BakkalSell</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="css/mobile.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <h1>BakkalSell</h1>
+        </div>
+    </header>
+    <br>
+    <section id="container" class="container">
+        <div id="user-actions">
+            <form id="login-form" class="border box-shadow">
+
+                <div class="form-group" style="text-align: center;">
+                    <h3>Login Form</h3>
+                    <hr style="margin: 0 auto; width:50%;border:2px solid black;opacity: 0.4;" class="w3-round">
+                </div>
+                <div class="form-group">
+                    <label for="username">Kullanıcı Adı</label>
+                    <input type="text" id="username" class="input" placeholder="Kullanıcı Adı">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Şifre</label>
+                    <input type="password" id="password" class="input" placeholder="Şifre">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-block btn-primary"> <i class="fas fa-sign-in-alt"></i> Giriş
+                        Yap</button>
+                </div>
+            </form>
+
+            <div id="user-info" class="border box-shadow text-center" style="margin-top: 10px;">
+                <i class="fas fa-user" style="font-size: 100px; width: 100%;"></i>
+                <p>Kullanıcı Adı</p>
+                <p>Bilgileri</p>
+            </div>
+
+            <div class="border box-shadow text-center" style="margin-top: 10px;">
+                <h3>İşlemler</h3>
+                <hr style="margin: 0 auto; width:50%;border:2px solid black;opacity: 0.4;" class="w3-round">
+                <ul id="actions" class="list-style-none">
+                    <li class="btn btn-default btn-block" style="text-align: left;"><a href="#"
+                            style="text-decoration: none;"><i class="fas fa-user-plus"
+                                style="margin-right: 0.4rem;"></i>User Ekleme</a></li>
+                    <li class="btn btn-default btn-block" style="text-align: left;"><a href="#"
+                            style="text-decoration: none;"><i class="fas fa-user-minus"
+                                style="margin-right: 0.4rem;"></i>User Silme</a></li>
+                    <li class="btn btn-default btn-block" style="text-align: left;"><a href="#"
+                            style="text-decoration: none;"><i class="fas fa-user-edit"
+                                style="margin-right: 0.4rem;"></i>User Düzenleme</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="content" class="border box-shadow text-center">
+            <div class="card product">
+                <i class="fas fa-gift" style="font-size:200px"></i>
+                <h3>Ürün Adı</h3>
+                <p>Fiyat:10 TL</p>
+                <p>Stok:100</p>
+                <hr />
+                <button type="button" class="btn-block btn"><i class="fas fa-cart-plus"></i> Sepete Ekle</button>
+            </div>
+            <div class="card product">
+                <i class="fas fa-gift" style="font-size:200px"></i>
+                <h3>Ürün Adı</h3>
+                <p>Fiyat:10 TL</p>
+                <p>Stok:100</p>
+                <hr />
+                <button type="button" class="btn-block btn"><i class="fas fa-cart-plus"></i> Sepete Ekle</button>
+            </div>
+            <div class="card product">
+                <i class="fas fa-gift" style="font-size:200px"></i>
+                <h3>Ürün Adı</h3>
+                <p>Fiyat:10 TL</p>
+                <p>Stok:100</p>
+                <hr />
+                <button type="button" class="btn-block btn"><i class="fas fa-cart-plus"></i> Sepete Ekle</button>
+            </div>
+            <div class="card product">
+                <i class="fas fa-gift" style="font-size:200px"></i>
+                <h3>Ürün Adı</h3>
+                <p>Fiyat:10 TL</p>
+                <p>Stok:100</p>
+                <hr />
+                <button type="button" class="btn-block btn"><i class="fas fa-cart-plus"></i> Sepete Ekle</button>
+            </div>
+
+        </div>
+        <div id="cart" class="text-center box-shadow">
+            <h3>Sepetim</h3>
+            <hr>
+            <ul id="cart-product-list" class="list-style-none">
+                <li class="cart-list-item border">
+                    <i class="fas fa-carrot" style="font-size: 100px;"></i>
+                    <span>Elma</span>
+                    <br>
+                    <span>10TL X </span>
+                    <input type="number" id="quantity" name="quantity" style="width:2rem" min="1" max="500" value="1">
+                    <span>Tutar:10 tl</span>
+                </li>
+                <li class="cart-list-item border">
+                    <i class="fas fa-carrot" style="font-size: 100px;"></i>
+                    <span>Elma</span>
+                    <br>
+                    <span>10TL X </span>
+                    <input type="number" id="quantity" name="quantity" style="width:2rem" min="1" max="500" value="1">
+                    <span>Tutar:10 tl</span>
+                </li>
+
+            </ul>
+            <hr>
+            <div>
+                <span>1 adet ürün</span>
+                <span>Toplam Tutar: 10--TL</span>
+            </div>
+            <hr>
+            <button class="btn btn-block btn-danger">Satış Yap</button>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
